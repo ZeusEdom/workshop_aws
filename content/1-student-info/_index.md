@@ -6,20 +6,6 @@ chapter : false
 pre : " <b> 1.1 </b> "
 ---
 
-<div style="display: flex; gap: 24px; align-items: center; margin-top: 15px; margin-bottom: 30px; background: #f8f9fa; padding: 24px; border-radius: 12px; border: 1px solid #e9ecef;">
-  <img src="/workshop_aws/images/avatar.jpg" alt="Pham The Hoai" style="width: 150px; height: 190px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); flex-shrink: 0;" />
-  <div>
-    <h3 style="margin-top: 0; margin-bottom: 8px; color: #232f3e; font-size: 1.4rem;">Pham The Hoai</h3>
-    <p style="margin: 5px 0;"><strong>University:</strong> Hanoi University of Civil Engineering (HUCE)</p>
-    <p style="margin: 5px 0;"><strong>Major:</strong> Computer Science</p>
-    <p style="margin: 5px 0;"><strong>Company:</strong> AMAZON WEB SERVICES VIETNAM COMPANY LIMITED</p>
-    <p style="margin: 5px 0;"><strong>Role:</strong> Cloud Engineer Intern (Solutions Architect Track)</p>
-    <p style="margin: 5px 0;"><strong>Period:</strong> August 3, 2026 – September 27, 2026 (8 Weeks)</p>
-  </div>
-</div>
-
----
-
 ### 1. Student Personal Details
 - **Full Name:** Pham The Hoai
 - **Phone Number:** 0869839771
