@@ -7,7 +7,7 @@ pre : " <b> 1.1 </b> "
 ---
 
 <div style="display: flex; gap: 24px; align-items: center; margin-top: 15px; margin-bottom: 30px; background: #f8f9fa; padding: 24px; border-radius: 12px; border: 1px solid #e9ecef;">
-  <img src="../../images/avatar.jpg" alt="Phạm Thế Hoài" style="width: 150px; height: 190px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); flex-shrink: 0;" />
+  <img src="/workshop_aws/images/avatar.jpg" alt="Phạm Thế Hoài" style="width: 150px; height: 190px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); flex-shrink: 0;" />
   <div>
     <h3 style="margin-top: 0; margin-bottom: 8px; color: #232f3e; font-size: 1.4rem;">Phạm Thế Hoài</h3>
     <p style="margin: 5px 0;"><strong>Trường:</strong> Đại Học Xây Dựng Hà Nội (HUCE)</p>
