@@ -16,7 +16,7 @@ Amazon EventBridge is a serverless event bus that enables building event-driven 
 2. In the left navigation pane, select **Rules** (or **Schedules**) -> Click **Create rule**.
 3. Name the Rule: `weather-fetch-schedule` -> Select Rule type: **Schedule**.
 
-![Create EventBridge Rule](/images/5-workshop/5.4-eventbridge/01-create-rule.png?featherlight=false&width=90pc)
+![Create EventBridge Rule](/workshop_aws/images/5-workshop/5.4-eventbridge/01-create-rule.png)
 
 ---
 
@@ -28,7 +28,7 @@ Amazon EventBridge is a serverless event bus that enables building event-driven 
    - **Unit:** `Minutes` (or expression `rate(30 minutes)`).
 3. Click **Next**.
 
-![Schedule Pattern 30 Minutes](/images/5-workshop/5.4-eventbridge/02-schedule-pattern.png?featherlight=false&width=90pc)
+![Schedule Pattern 30 Minutes](/workshop_aws/images/5-workshop/5.4-eventbridge/02-schedule-pattern.png)
 
 ---
 
@@ -38,7 +38,7 @@ Amazon EventBridge is a serverless event bus that enables building event-driven 
 2. Select target service: **Lambda function**.
 3. Choose function target: `weather-fetcher`.
 
-![Attach Lambda Target](/images/5-workshop/5.4-eventbridge/03-target-lambda.png?featherlight=false&width=90pc)
+![Attach Lambda Target](/workshop_aws/images/5-workshop/5.4-eventbridge/03-target-lambda.png)
 
 4. Click **Create rule** to activate.
 

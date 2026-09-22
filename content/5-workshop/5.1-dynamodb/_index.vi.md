@@ -20,11 +20,11 @@ Amazon DynamoDB là dịch vụ cơ sở dữ liệu NoSQL quản lý hoàn toà
    - **Sort key:** `timestamp` (Number)
 4. Mục **Table capacity settings**, chọn **On-demand** (chế độ tự động mở rộng theo lưu lượng, chỉ trả phí cho các truy vấn thực tế).
 
-![Create DynamoDB Table](/images/5-workshop/5.1-dynamodb/01-create-table.png?featherlight=false&width=90pc)
+![Create DynamoDB Table](/workshop_aws/images/5-workshop/5.1-dynamodb/01-create-table.png)
 
 5. Nhấn **Create table** và đợi khoảng vài giây cho đến khi trạng thái Table chuyển sang **Active**.
 
-![DynamoDB Table Active](/images/5-workshop/5.1-dynamodb/02-table-active.png?featherlight=false&width=90pc)
+![DynamoDB Table Active](/workshop_aws/images/5-workshop/5.1-dynamodb/02-table-active.png)
 
 ---
 
@@ -37,7 +37,7 @@ Tính năng **Time-To-Live (TTL)** giúp tự động định thời điểm h�
 3. Tại ô **TTL attribute name**, nhập `ttl`.
 4. Nhấn **Save changes** để hoàn tất kích hoạt.
 
-![Enable TTL Attribute](/images/5-workshop/5.1-dynamodb/03-enable-ttl.png?featherlight=false&width=90pc)
+![Enable TTL Attribute](/workshop_aws/images/5-workshop/5.1-dynamodb/03-enable-ttl.png)
 
 {{% notice note %}}
 **Giải thích cơ chế TTL:** Trong hàm Lambda Fetcher, thuộc tính `ttl` sẽ được tính bằng:

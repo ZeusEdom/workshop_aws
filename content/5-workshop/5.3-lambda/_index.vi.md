@@ -21,7 +21,7 @@ AWS Lambda cho phép bạn chạy mã nguồn mà không cần cấp phát hoặ
    - **Execution role:** Chọn *Use an existing role* -> Chọn `weather-fetcher-role`.
 4. Nhấn **Create function**.
 
-![Create Weather Fetcher Lambda](/images/5-workshop/5.3-lambda/01-create-fetcher.png?featherlight=false&width=90pc)
+![Create Weather Fetcher Lambda](/workshop_aws/images/5-workshop/5.3-lambda/01-create-fetcher.png)
 
 #### Bước 2: Cập nhật Mã nguồn Python
 Tại ô Code Source (`lambda_function.py`), dán mã nguồn thu thập dữ liệu thời tiết và chuyển đổi kiểu `Decimal` để tương thích với DynamoDB:
@@ -69,7 +69,7 @@ def handler(event, context):
     return {'statusCode': 200, 'body': json.dumps({'message': 'Fetch success', 'count': len(results)})}
 ```
 
-![Fetcher Source Code](/images/5-workshop/5.3-lambda/02-fetcher-code.png?featherlight=false&width=90pc)
+![Fetcher Source Code](/workshop_aws/images/5-workshop/5.3-lambda/02-fetcher-code.png)
 
 #### Bước 3: Cấu hình Biến môi trường (Environment Variables)
 Chuyển sang tab **Configuration** -> **Environment variables** -> Nhấn **Edit** và thêm:
@@ -77,22 +77,22 @@ Chuyển sang tab **Configuration** -> **Environment variables** -> Nhấn **Edi
 - `TABLE_NAME`: `WeatherData`
 - `CITIES`: `Hanoi, Ho Chi Minh City, Da Nang, Hue, Nha Trang, Da Lat, Haiphong, Can Tho, Tokyo, London`
 
-![Environment Variables](/images/5-workshop/5.3-lambda/03-env-vars.png?featherlight=false&width=90pc)
+![Environment Variables](/workshop_aws/images/5-workshop/5.3-lambda/03-env-vars.png)
 
 #### Bước 4: Điều chỉnh Runtime Settings & Timeout
 1. Tại tab **Configuration** -> **General configuration**, chọn **Edit** -> Đổi Timeout lên `15 seconds`.
 2. Tại mục **Runtime settings**, đổi Handler thành `lambda_function.handler`.
 
-![Handler & Timeout Config](/images/5-workshop/5.3-lambda/04-handler-config.png?featherlight=false&width=90pc)
+![Handler & Timeout Config](/workshop_aws/images/5-workshop/5.3-lambda/04-handler-config.png)
 
 #### Bước 5: Chạy Test kiểm thử
 Nhấn nút **Test** để thực thi hàm. Kết quả trả về `200 OK` thu thập đủ 10 thành phố.
 
-![Test Fetcher Lambda](/images/5-workshop/5.3-lambda/05-fetcher-test.png?featherlight=false&width=90pc)
+![Test Fetcher Lambda](/workshop_aws/images/5-workshop/5.3-lambda/05-fetcher-test.png)
 
 Kiểm tra trực tiếp tại **DynamoDB Console -> Explore Items**, dữ liệu 10 thành phố đã được ghi thành công!
 
-![DynamoDB Items Verification](/images/5-workshop/5.3-lambda/06-dynamodb-items.png?featherlight=false&width=90pc)
+![DynamoDB Items Verification](/workshop_aws/images/5-workshop/5.3-lambda/06-dynamodb-items.png)
 
 ---
 
@@ -133,4 +133,4 @@ def handler(event, context):
 
 Chạy **Test** kiểm thử hàm `weather-api-handler`, phản hồi `200 OK` chứa danh sách mảng JSON dữ liệu các thành phố.
 
-![Test API Handler Lambda](/images/5-workshop/5.3-lambda/07-api-handler-test.png?featherlight=false&width=90pc)
+![Test API Handler Lambda](/workshop_aws/images/5-workshop/5.3-lambda/07-api-handler-test.png)

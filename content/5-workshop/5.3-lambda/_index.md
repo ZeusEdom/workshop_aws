@@ -21,7 +21,7 @@ AWS Lambda runs your code without requiring server provisioning or management. I
    - **Execution role:** Select *Use an existing role* -> Choose `weather-fetcher-role`.
 4. Click **Create function**.
 
-![Create Weather Fetcher Lambda](/images/5-workshop/5.3-lambda/01-create-fetcher.png?featherlight=false&width=90pc)
+![Create Weather Fetcher Lambda](/workshop_aws/images/5-workshop/5.3-lambda/01-create-fetcher.png)
 
 #### Step 2: Implement Python Code
 In the Code Source panel (`lambda_function.py`), paste the Python script to fetch OpenWeatherMap API data and parse float numbers into DynamoDB-compatible `Decimal` format:
@@ -69,7 +69,7 @@ def handler(event, context):
     return {'statusCode': 200, 'body': json.dumps({'message': 'Fetch success', 'count': len(results)})}
 ```
 
-![Fetcher Source Code](/images/5-workshop/5.3-lambda/02-fetcher-code.png?featherlight=false&width=90pc)
+![Fetcher Source Code](/workshop_aws/images/5-workshop/5.3-lambda/02-fetcher-code.png)
 
 #### Step 3: Configure Environment Variables
 Switch to **Configuration** tab -> **Environment variables** -> Click **Edit** and define:
@@ -77,22 +77,22 @@ Switch to **Configuration** tab -> **Environment variables** -> Click **Edit** a
 - `TABLE_NAME`: `WeatherData`
 - `CITIES`: `Hanoi, Ho Chi Minh City, Da Nang, Hue, Nha Trang, Da Lat, Haiphong, Can Tho, Tokyo, London`
 
-![Environment Variables](/images/5-workshop/5.3-lambda/03-env-vars.png?featherlight=false&width=90pc)
+![Environment Variables](/workshop_aws/images/5-workshop/5.3-lambda/03-env-vars.png)
 
 #### Step 4: Adjust Runtime Settings & Timeout
 1. Under **Configuration** tab -> **General configuration**, click **Edit** -> Increase Timeout to `15 seconds`.
 2. Under **Runtime settings**, change Handler entry point to `lambda_function.handler`.
 
-![Handler & Timeout Config](/images/5-workshop/5.3-lambda/04-handler-config.png?featherlight=false&width=90pc)
+![Handler & Timeout Config](/workshop_aws/images/5-workshop/5.3-lambda/04-handler-config.png)
 
 #### Step 5: Execute Test Event
 Click **Test** to execute the function. The response returns `200 OK` fetching telemetry for all 10 cities.
 
-![Test Fetcher Lambda](/images/5-workshop/5.3-lambda/05-fetcher-test.png?featherlight=false&width=90pc)
+![Test Fetcher Lambda](/workshop_aws/images/5-workshop/5.3-lambda/05-fetcher-test.png)
 
 Verify records in **DynamoDB Console -> Explore Items** to confirm item insertion.
 
-![DynamoDB Items Verification](/images/5-workshop/5.3-lambda/06-dynamodb-items.png?featherlight=false&width=90pc)
+![DynamoDB Items Verification](/workshop_aws/images/5-workshop/5.3-lambda/06-dynamodb-items.png)
 
 ---
 
@@ -133,4 +133,4 @@ def handler(event, context):
 
 Run a **Test** invocation for `weather-api-handler`, confirming `200 OK` response with serialized JSON array payload.
 
-![Test API Handler Lambda](/images/5-workshop/5.3-lambda/07-api-handler-test.png?featherlight=false&width=90pc)
+![Test API Handler Lambda](/workshop_aws/images/5-workshop/5.3-lambda/07-api-handler-test.png)

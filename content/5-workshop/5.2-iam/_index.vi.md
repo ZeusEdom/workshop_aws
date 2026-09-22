@@ -16,7 +16,7 @@ AWS Identity and Access Management (IAM) giúp kiểm soát quyền truy cập v
 2. Tại menu bên trái, chọn **Roles** -> Nhấn **Create role**.
 3. Chọn loại Trusted Entity: **AWS service** -> Chọn Use case **Lambda** -> Nhấn **Next**.
 
-![Create IAM Role](/images/5-workshop/5.2-iam/01-create-role.png?featherlight=false&width=90pc)
+![Create IAM Role](/workshop_aws/images/5-workshop/5.2-iam/01-create-role.png)
 
 4. Ở bước **Add permissions**, tìm kiếm và chọn policy mặc định `AWSLambdaBasicExecutionRole` (cho phép Lambda ghi log ra Amazon CloudWatch Logs).
 5. Đặt tên Role: `weather-fetcher-role` -> Nhấn **Create role**.
@@ -29,7 +29,7 @@ AWS Identity and Access Management (IAM) giúp kiểm soát quyền truy cập v
 
 1. Mở Role `weather-fetcher-role` vừa tạo -> Chọn **Add permissions** -> **Create inline policy**.
 
-![Attach Policy to Role](/images/5-workshop/5.2-iam/02-attach-policy.png?featherlight=false&width=90pc)
+![Attach Policy to Role](/workshop_aws/images/5-workshop/5.2-iam/02-attach-policy.png)
 
 2. Chuyển sang chế độ **JSON** và nhập Policy ghi dữ liệu (`dynamodb:PutItem`):
 
@@ -68,4 +68,4 @@ AWS Identity and Access Management (IAM) giúp kiểm soát quyền truy cập v
 
 4. Kiểm tra tổng quan IAM Role sau khi gắn đủ các permissions.
 
-![IAM Role Summary](/images/5-workshop/5.2-iam/03-role-created.png?featherlight=false&width=90pc)
+![IAM Role Summary](/workshop_aws/images/5-workshop/5.2-iam/03-role-created.png)

@@ -22,7 +22,7 @@ The Web Dashboard loads seamlessly, presenting dynamic live components:
 4. **Live Telemetry Log (DynamoDB Table):** Real-time log table displaying continuous telemetry records fetched across 10 major cities.
 5. **Detailed Schedule Table:** Tabular view of upcoming 5-day forecast data.
 
-![Live Weather Dashboard Demonstration](/images/5-workshop/5.7-verification/01-live-dashboard.png?featherlight=false&width=90pc)
+![Live Weather Dashboard Demonstration](/workshop_aws/images/5-workshop/5.7-verification/01-live-dashboard.png)
 
 ---
 

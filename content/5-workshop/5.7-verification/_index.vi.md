@@ -22,7 +22,7 @@ Giao diện ứng dụng tải thành công với đầy đủ các thành phầ
 4. **Bảng Nhật ký Telemetry Live (DynamoDB):** Bảng hiển thị danh sách các bản ghi thời tiết mới nhất của 10 thành phố lớn thu thập tự động từ AWS Lambda.
 5. **Bảng Dự báo Lịch trình:** Bảng dữ liệu chi tiết các mốc thời gian trong 5 ngày tới.
 
-![Live Weather Dashboard Demonstration](/images/5-workshop/5.7-verification/01-live-dashboard.png?featherlight=false&width=90pc)
+![Live Weather Dashboard Demonstration](/workshop_aws/images/5-workshop/5.7-verification/01-live-dashboard.png)
 
 ---
 

@@ -17,7 +17,7 @@ Amazon Simple Storage Service (Amazon S3) cung cấp giải pháp lưu trữ đ�
 3. Điền tên Bucket: `weather-dashboard-toih` | Region: `ap-southeast-1`.
 4. Mục **Block Public Access settings for this bucket**, bỏ chọn *Block all public access* (nhấn xác nhận đồng ý mở quyền truy cập công khai cho trang web).
 
-![Create S3 Bucket](/images/5-workshop/5.6-s3/01-create-bucket.png?featherlight=false&width=90pc)
+![Create S3 Bucket](/workshop_aws/images/5-workshop/5.6-s3/01-create-bucket.png)
 
 5. Nhấn **Create bucket**.
 
@@ -30,7 +30,7 @@ Amazon Simple Storage Service (Amazon S3) cung cấp giải pháp lưu trữ đ�
 3. Chọn **Enable** -> Điền **Index document**: `index.html`.
 4. Nhấn **Save changes**.
 
-![Enable Static Website Hosting](/images/5-workshop/5.6-s3/02-static-hosting.png?featherlight=false&width=90pc)
+![Enable Static Website Hosting](/workshop_aws/images/5-workshop/5.6-s3/02-static-hosting.png)
 
 ---
 
@@ -53,7 +53,7 @@ Chuyển sang tab **Permissions** -> Mục **Bucket policy** -> Nhấn **Edit** 
 }
 ```
 
-![Bucket Policy Configuration](/images/5-workshop/5.6-s3/03-bucket-policy.png?featherlight=false&width=90pc)
+![Bucket Policy Configuration](/workshop_aws/images/5-workshop/5.6-s3/03-bucket-policy.png)
 
 ---
 
@@ -63,7 +63,7 @@ Chuyển sang tab **Permissions** -> Mục **Bucket policy** -> Nhấn **Edit** 
 2. Chọn tập tin `index.html` (đã cập nhật đúng `API_URL` của API Gateway vừa tạo).
 3. Nhấn **Upload** để hoàn tất tải file lên S3.
 
-![Upload Index HTML](/images/5-workshop/5.6-s3/04-upload-index.png?featherlight=false&width=90pc)
+![Upload Index HTML](/workshop_aws/images/5-workshop/5.6-s3/04-upload-index.png)
 
 ---
 
@@ -72,4 +72,4 @@ Chuyển sang tab **Permissions** -> Mục **Bucket policy** -> Nhấn **Edit** 
 Quay lại tab **Properties** -> Cuộn xuống cuối cùng tại mục **Static website hosting**, copy đường dẫn **Bucket website endpoint**:
 `http://weather-dashboard-toih.s3-website-ap-southeast-1.amazonaws.com`
 
-![S3 Website Endpoint URL](/images/5-workshop/5.6-s3/05-website-url.png?featherlight=false&width=90pc)
+![S3 Website Endpoint URL](/workshop_aws/images/5-workshop/5.6-s3/05-website-url.png)

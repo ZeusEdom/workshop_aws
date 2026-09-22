@@ -16,7 +16,7 @@ AWS Identity and Access Management (IAM) provides fine-grained access control ac
 2. In the left navigation pane, select **Roles** -> Click **Create role**.
 3. Select Trusted entity type: **AWS service** -> Choose Use case **Lambda** -> Click **Next**.
 
-![Create IAM Role](/images/5-workshop/5.2-iam/01-create-role.png?featherlight=false&width=90pc)
+![Create IAM Role](/workshop_aws/images/5-workshop/5.2-iam/01-create-role.png)
 
 4. On the **Add permissions** step, search for and select `AWSLambdaBasicExecutionRole` (grants permission to write logs to CloudWatch Logs).
 5. Name the Role: `weather-fetcher-role` -> Click **Create role**.
@@ -29,7 +29,7 @@ To grant the Lambda function strict access to read and write records in the `Wea
 
 1. Open the created `weather-fetcher-role` -> Click **Add permissions** -> **Create inline policy**.
 
-![Attach Policy to Role](/images/5-workshop/5.2-iam/02-attach-policy.png?featherlight=false&width=90pc)
+![Attach Policy to Role](/workshop_aws/images/5-workshop/5.2-iam/02-attach-policy.png)
 
 2. Switch to the **JSON** editor and paste the Write Policy (`dynamodb:PutItem`):
 
@@ -68,4 +68,4 @@ To grant the Lambda function strict access to read and write records in the `Wea
 
 4. Verify the finalized IAM Role permissions summary.
 
-![IAM Role Summary](/images/5-workshop/5.2-iam/03-role-created.png?featherlight=false&width=90pc)
+![IAM Role Summary](/workshop_aws/images/5-workshop/5.2-iam/03-role-created.png)

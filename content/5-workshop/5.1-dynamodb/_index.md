@@ -20,11 +20,11 @@ Amazon DynamoDB is a fully managed NoSQL database service that provides fast and
    - **Sort key:** `timestamp` (Number)
 4. Under **Table capacity settings**, select **On-demand** (auto-scales based on incoming traffic, pay only per request).
 
-![Create DynamoDB Table](/images/5-workshop/5.1-dynamodb/01-create-table.png?featherlight=false&width=90pc)
+![Create DynamoDB Table](/workshop_aws/images/5-workshop/5.1-dynamodb/01-create-table.png)
 
 5. Click **Create table** and wait a few seconds until the table status changes to **Active**.
 
-![DynamoDB Table Active](/images/5-workshop/5.1-dynamodb/02-table-active.png?featherlight=false&width=90pc)
+![DynamoDB Table Active](/workshop_aws/images/5-workshop/5.1-dynamodb/02-table-active.png)
 
 ---
 
@@ -37,7 +37,7 @@ Amazon DynamoDB is a fully managed NoSQL database service that provides fast and
 3. In the **TTL attribute name** field, type `ttl`.
 4. Click **Save changes** to finalize.
 
-![Enable TTL Attribute](/images/5-workshop/5.1-dynamodb/03-enable-ttl.png?featherlight=false&width=90pc)
+![Enable TTL Attribute](/workshop_aws/images/5-workshop/5.1-dynamodb/03-enable-ttl.png)
 
 {{% notice note %}}
 **How TTL works:** In the Lambda Fetcher function, the `ttl` attribute is computed as:

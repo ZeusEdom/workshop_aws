@@ -16,7 +16,7 @@ Amazon API Gateway giúp các nhà phát triển dễ dàng tạo, xuất bản,
 2. Chọn loại API **HTTP API** -> Nhấn **Build**.
 3. Điền tên API: `weather-dashboard-api`.
 
-![Create HTTP API](/images/5-workshop/5.5-apigateway/01-create-api.png?featherlight=false&width=90pc)
+![Create HTTP API](/workshop_aws/images/5-workshop/5.5-apigateway/01-create-api.png)
 
 ---
 
@@ -25,7 +25,7 @@ Amazon API Gateway giúp các nhà phát triển dễ dàng tạo, xuất bản,
 1. Tại menu bên trái, chọn **Routes** -> Nhấn **Create**.
 2. Chọn Method: `GET` | Route path: `/weather`.
 
-![Create GET Weather Route](/images/5-workshop/5.5-apigateway/02-create-route.png?featherlight=false&width=90pc)
+![Create GET Weather Route](/workshop_aws/images/5-workshop/5.5-apigateway/02-create-route.png)
 
 ---
 
@@ -35,7 +35,7 @@ Amazon API Gateway giúp các nhà phát triển dễ dàng tạo, xuất bản,
 2. Chọn Integration type: **Lambda function**.
 3. Chọn Lambda function: `weather-api-handler` -> Nhấn **Attach**.
 
-![Attach Lambda Integration](/images/5-workshop/5.5-apigateway/03-attach-integration.png?featherlight=false&width=90pc)
+![Attach Lambda Integration](/workshop_aws/images/5-workshop/5.5-apigateway/03-attach-integration.png)
 
 ---
 
@@ -43,7 +43,7 @@ Amazon API Gateway giúp các nhà phát triển dễ dàng tạo, xuất bản,
 
 API Gateway tự động cấu hình Stage `$default` với chế độ Auto-deploy được bật, giúp mọi thay đổi về Route/Integration lập tức có hiệu lực.
 
-![Deploy Stage Config](/images/5-workshop/5.5-apigateway/04-deploy-stage.png?featherlight=false&width=90pc)
+![Deploy Stage Config](/workshop_aws/images/5-workshop/5.5-apigateway/04-deploy-stage.png)
 
 ---
 
@@ -58,7 +58,7 @@ API Gateway tự động cấu hình Stage `$default` với chế độ Auto-dep
    - **Access-Control-Allow-Methods:** `GET, OPTIONS`
 3. Nhấn **Save**.
 
-![CORS Setup](/images/5-workshop/5.5-apigateway/05-cors-setup.png?featherlight=false&width=90pc)
+![CORS Setup](/workshop_aws/images/5-workshop/5.5-apigateway/05-cors-setup.png)
 
 ---
 
@@ -67,11 +67,11 @@ API Gateway tự động cấu hình Stage `$default` với chế độ Auto-dep
 1. Tại mục **Stages**, copy đường dẫn **Invoke URL** của API:
    `https://0ehzg82gn4.execute-api.ap-southeast-1.amazonaws.com`
 
-![API Invoke URL](/images/5-workshop/5.5-apigateway/06-invoke-url.png?featherlight=false&width=90pc)
+![API Invoke URL](/workshop_aws/images/5-workshop/5.5-apigateway/06-invoke-url.png)
 
 2. Mở trình duyệt web và truy cập endpoint:
    `https://0ehzg82gn4.execute-api.ap-southeast-1.amazonaws.com/weather`
 
 Kết quả trả về danh sách dữ liệu thời tiết mảng JSON chuẩn `200 OK`.
 
-![Browser JSON Test](/images/5-workshop/5.5-apigateway/07-browser-test.png?featherlight=false&width=90pc)
+![Browser JSON Test](/workshop_aws/images/5-workshop/5.5-apigateway/07-browser-test.png)

@@ -16,7 +16,7 @@ Amazon API Gateway makes it easy for developers to create, publish, maintain, mo
 2. Select **HTTP API** -> Click **Build**.
 3. Set API Name: `weather-dashboard-api`.
 
-![Create HTTP API](/images/5-workshop/5.5-apigateway/01-create-api.png?featherlight=false&width=90pc)
+![Create HTTP API](/workshop_aws/images/5-workshop/5.5-apigateway/01-create-api.png)
 
 ---
 
@@ -25,7 +25,7 @@ Amazon API Gateway makes it easy for developers to create, publish, maintain, mo
 1. In the left menu, click **Routes** -> Click **Create**.
 2. Choose Method: `GET` | Route path: `/weather`.
 
-![Create GET Weather Route](/images/5-workshop/5.5-apigateway/02-create-route.png?featherlight=false&width=90pc)
+![Create GET Weather Route](/workshop_aws/images/5-workshop/5.5-apigateway/02-create-route.png)
 
 ---
 
@@ -35,7 +35,7 @@ Amazon API Gateway makes it easy for developers to create, publish, maintain, mo
 2. Integration type: **Lambda function**.
 3. Choose function: `weather-api-handler` -> Click **Attach**.
 
-![Attach Lambda Integration](/images/5-workshop/5.5-apigateway/03-attach-integration.png?featherlight=false&width=90pc)
+![Attach Lambda Integration](/workshop_aws/images/5-workshop/5.5-apigateway/03-attach-integration.png)
 
 ---
 
@@ -43,7 +43,7 @@ Amazon API Gateway makes it easy for developers to create, publish, maintain, mo
 
 API Gateway automatically configures the `$default` stage with Auto-deploy enabled, instantly publishing route updates.
 
-![Deploy Stage Config](/images/5-workshop/5.5-apigateway/04-deploy-stage.png?featherlight=false&width=90pc)
+![Deploy Stage Config](/workshop_aws/images/5-workshop/5.5-apigateway/04-deploy-stage.png)
 
 ---
 
@@ -58,7 +58,7 @@ To ensure web browsers hosting the S3 web UI can query API endpoints without cro
    - **Access-Control-Allow-Methods:** `GET, OPTIONS`
 3. Click **Save**.
 
-![CORS Setup](/images/5-workshop/5.5-apigateway/05-cors-setup.png?featherlight=false&width=90pc)
+![CORS Setup](/workshop_aws/images/5-workshop/5.5-apigateway/05-cors-setup.png)
 
 ---
 
@@ -67,11 +67,11 @@ To ensure web browsers hosting the S3 web UI can query API endpoints without cro
 1. Under **Stages**, copy the stage **Invoke URL**:
    `https://0ehzg82gn4.execute-api.ap-southeast-1.amazonaws.com`
 
-![API Invoke URL](/images/5-workshop/5.5-apigateway/06-invoke-url.png?featherlight=false&width=90pc)
+![API Invoke URL](/workshop_aws/images/5-workshop/5.5-apigateway/06-invoke-url.png)
 
 2. Test the API in your web browser:
    `https://0ehzg82gn4.execute-api.ap-southeast-1.amazonaws.com/weather`
 
 The browser renders a clean `200 OK` JSON array containing current telemetry records.
 
-![Browser JSON Test](/images/5-workshop/5.5-apigateway/07-browser-test.png?featherlight=false&width=90pc)
+![Browser JSON Test](/workshop_aws/images/5-workshop/5.5-apigateway/07-browser-test.png)

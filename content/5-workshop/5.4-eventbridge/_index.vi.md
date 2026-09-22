@@ -16,7 +16,7 @@ Amazon EventBridge là dịch vụ Serverless Event Bus cho phép kết nối c�
 2. Tại menu bên trái, chọn **Rules** (hoặc **Schedules**) -> Nhấn **Create rule**.
 3. Nhập tên Rule: `weather-fetch-schedule` -> Chọn Rule type: **Schedule**.
 
-![Create EventBridge Rule](/images/5-workshop/5.4-eventbridge/01-create-rule.png?featherlight=false&width=90pc)
+![Create EventBridge Rule](/workshop_aws/images/5-workshop/5.4-eventbridge/01-create-rule.png)
 
 ---
 
@@ -28,7 +28,7 @@ Amazon EventBridge là dịch vụ Serverless Event Bus cho phép kết nối c�
    - **Unit:** `Minutes` (hoặc biểu thức `rate(30 minutes)`).
 3. Nhấn **Next**.
 
-![Schedule Pattern 30 Minutes](/images/5-workshop/5.4-eventbridge/02-schedule-pattern.png?featherlight=false&width=90pc)
+![Schedule Pattern 30 Minutes](/workshop_aws/images/5-workshop/5.4-eventbridge/02-schedule-pattern.png)
 
 ---
 
@@ -38,7 +38,7 @@ Amazon EventBridge là dịch vụ Serverless Event Bus cho phép kết nối c�
 2. Danh sách service chọn **Lambda function**.
 3. Mục Function chọn hàm: `weather-fetcher`.
 
-![Attach Lambda Target](/images/5-workshop/5.4-eventbridge/03-target-lambda.png?featherlight=false&width=90pc)
+![Attach Lambda Target](/workshop_aws/images/5-workshop/5.4-eventbridge/03-target-lambda.png)
 
 4. Nhấn **Create rule** để hoàn tất.
 
