@@ -2,208 +2,208 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/5.1-dynamodb/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/5.1-dynamodb/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/5.1-dynamodb/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/5.1-dynamodb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/5.1-dynamodb/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/5.1-dynamodb/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/"
+                href="https://zeusedom.github.io/workshop_aws/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/"
+                href="https://zeusedom.github.io/workshop_aws/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/1-student-info/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/1-student-info/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/1-student-info/"
+                href="https://zeusedom.github.io/workshop_aws/vi/1-student-info/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/1-student-info/"
+                href="https://zeusedom.github.io/workshop_aws/1-student-info/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/2-worklog/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/2-worklog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/2-worklog/"
+                href="https://zeusedom.github.io/workshop_aws/vi/2-worklog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/2-worklog/"
+                href="https://zeusedom.github.io/workshop_aws/2-worklog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/5.2-iam/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/5.2-iam/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/5.2-iam/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/5.2-iam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/5.2-iam/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/5.2-iam/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/5.3-lambda/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/5.3-lambda/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/5.3-lambda/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/5.3-lambda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/5.3-lambda/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/5.3-lambda/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/3-proposal/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/3-proposal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/3-proposal/"
+                href="https://zeusedom.github.io/workshop_aws/vi/3-proposal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/3-proposal/"
+                href="https://zeusedom.github.io/workshop_aws/3-proposal/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/5.4-eventbridge/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/5.4-eventbridge/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/5.4-eventbridge/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/5.4-eventbridge/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/5.4-eventbridge/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/5.4-eventbridge/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/4-events/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/4-events/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/4-events/"
+                href="https://zeusedom.github.io/workshop_aws/vi/4-events/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/4-events/"
+                href="https://zeusedom.github.io/workshop_aws/4-events/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/5.5-apigateway/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/5.5-apigateway/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/5.5-apigateway/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/5.5-apigateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/5.5-apigateway/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/5.5-apigateway/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/5.6-s3/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/5.6-s3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/5.6-s3/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/5.6-s3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/5.6-s3/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/5.6-s3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/6-self-evaluation/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/6-self-evaluation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/6-self-evaluation/"
+                href="https://zeusedom.github.io/workshop_aws/vi/6-self-evaluation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/6-self-evaluation/"
+                href="https://zeusedom.github.io/workshop_aws/6-self-evaluation/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/7-feedback/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/7-feedback/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/7-feedback/"
+                href="https://zeusedom.github.io/workshop_aws/vi/7-feedback/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/7-feedback/"
+                href="https://zeusedom.github.io/workshop_aws/7-feedback/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/5-workshop/5.7-verification/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/5-workshop/5.7-verification/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/5-workshop/5.7-verification/"
+                href="https://zeusedom.github.io/workshop_aws/vi/5-workshop/5.7-verification/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/5-workshop/5.7-verification/"
+                href="https://zeusedom.github.io/workshop_aws/5-workshop/5.7-verification/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/categories/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/categories/"
+                href="https://zeusedom.github.io/workshop_aws/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/categories/"
+                href="https://zeusedom.github.io/workshop_aws/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/workshop_aws/tags/</loc>
+    <loc>https://zeusedom.github.io/workshop_aws/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/workshop_aws/vi/tags/"
+                href="https://zeusedom.github.io/workshop_aws/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/workshop_aws/tags/"
+                href="https://zeusedom.github.io/workshop_aws/tags/"
                 />
   </url>
 </urlset>
