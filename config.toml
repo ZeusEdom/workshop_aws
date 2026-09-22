@@ -1,5 +1,14 @@
+# Base URL for GitHub Pages
+baseURL = "https://zeusedom.github.io/workshop_aws/"
+
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
+
+# Enable raw HTML rendering in Markdown (Goldmark parser)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # For search functionality
 [outputs]
@@ -10,17 +19,23 @@ home = [ "HTML", "RSS", "JSON"]
   themeVariant = "workshop"
   # Git hub repo link
   editURL = ""
-  description = ""
-  author = "journeyoftheaverageguy@gmail.com"
+  description = "FCAJ Internship Report & AWS Weather Dashboard Serverless Workshop by Pham The Hoai"
+  author = "Pham The Hoai (phamthehoai2004hn@gmail.com)"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
   
 [Languages]
 [Languages.en]
-title = "Create a new AWS account."
+title = "FCAJ Report - AWS Weather Dashboard"
 weight = 1
 languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub Repository"
+identifier = "GitHub Repo"
+url = "https://github.com/ZeusEdom/aws_final"
+weight = 10
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
@@ -28,26 +43,19 @@ identifier = "AWS Study Group"
 url = "https://aws.amazon.com/blogs"
 weight = 20
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/awsstudygroupfcj"
-weight = 20
-
 [Languages.vi]
-title = "Tạo mới tài khoản AWS"
+title = "Báo cáo FCAJ - AWS Weather Dashboard"
 weight = 2
 languageName = "Tiếng Việt"
+
+[[Languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Mã nguồn GitHub"
+identifier = "GitHub Repo VI"
+url = "https://github.com/ZeusEdom/aws_final"
+weight = 10
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
 identifier = "AWS Study Group"
 url = "http://awsstudygroup.com"
 weight = 20
-
-[[Languages.vi.menu.shortcuts]]
-name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
-identifier = "AWS Study Group FB"
-url = "https://www.facebook.com/groups/awsstudygroupfcj"
-weight = 20
-

@@ -1,42 +1,40 @@
 ---
-title : "Thiết lập Tài Khoản AWS"
-date :  "`r Sys.Date()`" 
+title : "Báo Cáo Thực Tập FCAJ & AWS Serverless Workshop"
+date : "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
 
-# Tạo tài khoản AWS đầu tiên
+#### Chào mừng đến với Báo cáo Thực tập FCAJ!
+Trang web này tổng hợp toàn bộ báo cáo kết quả thực tập **First Cloud Journey (FCAJ)** và tài liệu hướng dẫn thực hành xây dựng hệ thống **Serverless Weather Dashboard & Real-time Telemetry Pipeline** trên nền tảng **Amazon Web Services (AWS)**.
 
-#### Tổng quan
-Trong bài lab đầu tiên này, bạn sẽ tạo mới **tài khoản AWS** đầu tiên của mình, tạo **MFA** (Multi-factor Authentication) để gia tăng bảo mật tài khoản của bạn. Bước tiếp theo bạn sẽ tạo **Admin Group**, **Admin User** để quản lý quyền truy cập vào các tài nguyên trong tài khoản của mình thay vì sử dụng user root.\
-Cuối cùng, nếu quá trình xác thực tài khoản của bạn có vấn đề, bạn sẽ được hướng dẫn hỗ trợ xác thực tài khoản với **AWS Support**.
+---
 
-#### Tài khoản AWS (AWS Account)
-**Tài khoản AWS** là phương tiện để bạn có thể truy cập và sử dụng những tài nguyên và dịch vụ của AWS. Theo mặc định, mỗi tài khoản AWS sẽ có một *root user*. *Root user* có toàn quyền với tài khoản AWS của bạn, và quyền hạn của root user không thể bị giới hạn. Nếu bạn mới sử dụng tài khoản AWS lần đầu tiên, bạn sẽ truy cập vào tài khoản dưới danh nghĩa của *root user*.
+###  Thông tin tổng quan Báo cáo (7 Mục FCAJ)
 
-![Create Account](/images/1/0001.png?featherlight=false&width=90pc)
+| Mục | Tên nội dung | Mô tả chi tiết |
+| :---: | :--- | :--- |
+| **1.1** | [Thông tin Sinh viên & Đơn vị thực tập](1-student-info/) | Họ tên, Trường, Công ty thực tập AWS Việt Nam & Vị trí Kỹ sư Đám mây. |
+| **1.2** | [Nhật ký Công việc 8 tuần](2-worklog/) | Chi tiết công việc, lộ trình học tập & đóng góp từ 03/08/2026 đến 27/09/2026. |
+| **1.3** | [Đề xuất Dự án & Kiến trúc](3-proposal/) | Tổng quan bài toán Weather Dashboard & sơ đồ kiến trúc Serverless 6 dịch vụ. |
+| **1.4** | [Sự kiện & Hoạt động](4-events/) | Các sự kiện Tech Talk, Workshop FCJ Community & làm việc nhóm. |
+| **1.5** | [Hướng dẫn Thực hành Workshop](5-workshop/) | **Trọng tâm (29 Screenshots)**: Hướng dẫn Step-by-Step triển khai hệ thống AWS. |
+| **1.6** | [Tự Đánh Giá & Bài Học](6-self-evaluation/) | Đánh giá kỹ năng cứng/mềm đạt được & định hướng phát triển Cloud. |
+| **1.7** | [Góp ý & Đánh giá](7-feedback/) | Đánh giá chương trình FCAJ & lời cảm ơn gửi tới Ban tổ chức và Mentor. |
+
+---
+
+### ️ Các dịch vụ AWS được sử dụng trong dự án
+
+- **Amazon DynamoDB**: Cơ sở dữ liệu NoSQL lưu trữ dữ liệu thời tiết với cơ chế tự động xóa dữ liệu cũ **TTL**.
+- **AWS Lambda**: Hàm xử lý logic Serverless (Python 3.12) thu thập thời tiết và phản hồi API.
+- **Amazon EventBridge**: Bộ lập lịch tự động kích hoạt Lambda thu thập dữ liệu định kỳ **30 phút/lần**.
+- **Amazon API Gateway**: HTTP API cung cấp endpoint RESTful secure cho ứng dụng Web.
+- **Amazon S3**: Lưu trữ và hosting giao diện Web tĩnh (**Static Website Hosting**).
+- **AWS IAM**: Quản lý truy cập an toàn, phân quyền tối thiểu (Least Privilege).
+
+---
 
 {{% notice note %}}
-Chính vì quyền hạn của **root user** không thể bị giới hạn, AWS khuyên bạn không nên sử dụng trực tiếp *root user* cho bất kỳ công tác nào. Thay vào đó, bạn nên tạo ra một *IAM User* và trao quyền quản trị cho *IAM User* đó để dễ dàng quản lý và giảm thiểu rủi ro.
+**Mã nguồn công khai:** Toàn bộ mã nguồn backend Python, cấu hình IAM, template Infrastructure as Code (IaC) và frontend HTML/JS đã được đẩy công khai tại Repository: [GitHub - ZeusEdom/aws_final](https://github.com/ZeusEdom/aws_final).
 {{% /notice %}}
-
-#### MFA (Multi-factor Authentication)
-**MFA** là một tính năng được sử dụng để gia tăng bảo mật của tài khoản AWS. Nếu MFA được kích hoạt, bạn sẽ phải nhập mã OTP (One-time Password) mỗi lần bạn đăng nhập vào tài khoản AWS.
-
-#### IAM Group 
-**IAM Group**  là một công cụ quản lý người dùng (*IAM User*) của AWS. Một IAM Group có thể chứa nhiều IAM User. Các IAM User ở trong một IAM Group đều hưởng chung quyền hạn mà IAM Group đó được gán cho.
-
-#### IAM User
-**IAM User** là một đơn vị người dùng của AWS. Khi bạn đăng nhập vào AWS, bạn sẽ phải đăng nhập dưới danh nghĩa của một IAM User. Nếu bạn mới đăng nhập vào AWS lần đầu tiên, bạn sẽ đăng nhập dưới danh nghĩa của *root user* (tạm dịch là người dùng gốc). Ngoài *root user* ra, bạn có thể tạo ra nhiều IAM User khác để cho phép người khác truy cập **dài hạn** vào tài nguyên AWS trong tài khoản AWS của bạn.
-
-
-#### AWS Support
-**AWS Support** là một đơn vị cung cấp các dịch vụ hỗ trợ khách hàng của AWS.
-
-
-#### Nội dung chính
-
-1. [Tạo tài khoản AWS](1-create-new-aws-account/)
-2. [Thiết lập MFA cho tài khoản AWS (Root)](2-mfa-setup-for-aws-user-(root)/)
-3. [Tài khoản và Nhóm Admin](3-create-admin-user-and-group/)
-4. [Hỗ trợ Xác thực Tài khoản](4-verify-new-account/)

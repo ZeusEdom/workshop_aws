@@ -1,0 +1,9 @@
+public/
+resources/_gen/
+.hugo_build.lock
+hugo.exe
+hugo.zip
+hugo/
+001content.zip
+.DS_Store
+Thumbs.db

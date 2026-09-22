@@ -1,46 +1,40 @@
 ---
-title : "Setting up an AWS account"
-date :  "`r Sys.Date()`" 
+title : "FCAJ Internship Report & AWS Serverless Workshop"
+date : "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
 
-# Creating your first AWS account
+#### Welcome to the FCAJ Internship Final Report!
+This website presents the comprehensive **First Cloud Journey (FCAJ)** internship final report and the step-by-step hands-on guide for building a **Serverless Weather Dashboard & Real-time Telemetry Pipeline** on **Amazon Web Services (AWS)**.
 
-#### Overview
-In this first lab, you will be creating your new **AWS** account and use Multi-factor Authentication (**MFA**) to improve your account security. Next, you will create an **Administrator Group** and **Admin User** to manage access to resources in your account instead of using the root user. \
-Finally, we will step through account authentication with **AWS Support** in the event you experience authentication problems.
+---
 
-#### AWS Account
-**An AWS account** is the basic container for all the AWS resources you can create as an AWS customer. By default, each AWS account will have a _root user_. The _root user_ has full access within your AWS account, and root user permissions cannot be limited. When you first create your AWS account, you will be assessing it as the _root user_.
+###  Overview of 7 Report Sections
 
-![Create Account](/images/1/0001.png?featherlight=false&width=90pc)
+| Section | Title | Summary |
+| :---: | :--- | :--- |
+| **1.1** | [Student & Company Information](1-student-info/) | Student details, Hanoi University of Civil Engineering, AWS Vietnam & Cloud Engineer Intern role. |
+| **1.2** | [8-Week Internship Worklog](2-worklog/) | Detailed weekly milestones, learning progress, and contributions (03/08/2026 - 27/09/2026). |
+| **1.3** | [Project Proposal & Architecture](3-proposal/) | Serverless Weather Dashboard problem statement & 6-service architecture diagram. |
+| **1.4** | [Events & Activities](4-events/) | AWS Tech Talks, FCJ Community Workshops, and teamwork activities. |
+| **1.5** | [Hands-on Workshop Guide](5-workshop/) | **Core Section (29 Screenshots)**: Step-by-step console guide for full AWS deployment. |
+| **1.6** | [Self-Evaluation & Reflections](6-self-evaluation/) | Technical & soft skill growth, learnings, and future cloud direction. |
+| **1.7** | [Program Feedback](7-feedback/) | Constructive feedback for FCAJ program and acknowledgments to mentors. |
 
-{{% notice note%}}
-As a best practice, do not use the AWS account _root user_ for any task where it's not required. Instead, create a new IAM user for each person that requires administrator access. Thereafter, the users in the administrators user group should set up the user groups, users, and so on, for the AWS account. All future interaction should be through the AWS account's users and their own keys instead of the root user. However, to perform some account and service management tasks, you must log in using the root user credentials.
-{{% /notice%}}
+---
 
-#### Multi-Factor Authentication (MFA)
-**MFA** adds extra security because it requires users to provide unique authentication from an AWS supported MFA mechanism in addition to their regular sign-in credentials when they access AWS websites or services.
+### ️ AWS Services Utilized
 
-#### IAM User Group 
-An **IAM user group** is a collection of IAM users. User groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users. Any user in that user group automatically has the permissions that are assigned to the user group. 
+- **Amazon DynamoDB**: NoSQL database for real-time telemetry storage with **TTL** auto-expiration.
+- **AWS Lambda**: Serverless Python 3.12 compute functions for fetching data and serving REST requests.
+- **Amazon EventBridge**: Cron scheduler executing data collection every **30 minutes**.
+- **Amazon API Gateway**: HTTP API providing CORS-enabled RESTful API endpoint.
+- **Amazon S3**: High-availability **Static Website Hosting** for the interactive dashboard UI.
+- **AWS IAM**: Security roles adhering to the principle of least privilege.
 
-#### IAM User
-An **IAM user** is an entity that you create in AWS to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials. \
-Please note that an IAM user with administrator permissions is not the same thing as the AWS account root user.
+---
 
-
-#### AWS Support
-AWS Basic Support offers all AWS customers access to our Resource Center, Service Health Dashboard, Product FAQs, Discussion Forums, and Support for Health Checks – at no additional charge. Customers who desire a deeper level of support can subscribe to AWS Support at the Developer, Business, or Enterprise level.
-
-Customers who choose AWS Support gain one-on-one, fast-response support from AWS engineers. The service helps customers use AWS's products and features. With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments. Customers with operational issues or technical questions can contact a team of support engineers and receive predictable response times and personalized support.
-
-
-#### Main Content
-
-1. [Creating a new AWS Account](1-create-new-aws-account/)
-2. [Setting up MFA for the AWS Account root user](2-MFA-Setup-For-AWS-User-(root))
-3. [Creating an Administrator Accounts and Groups](3-create-admin-user-and-group/)
-4. [Getting support for Account Authentication](4-verify-new-account/)
-<!-- need to remove parenthesis for path in Hugo 0.88.1 for Windows-->
+{{% notice note %}}
+**Public GitHub Repository:** The complete source code, IAM policies, IaC template, and frontend HTML/JS are available at: [GitHub - ZeusEdom/aws_final](https://github.com/ZeusEdom/aws_final).
+{{% /notice %}}

@@ -194,3 +194,66 @@ div.notices.info p {
     background: #FFF2DB;
 }
 
+/* Remove yellow background & copy button on inline <code> elements */
+:not(pre) > code, p code, li code, td code, th code {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--MAIN-TEXT-color) !important;
+    font-weight: 700 !important;
+    font-family: inherit !important;
+    padding: 0 2px !important;
+}
+
+/* Hide copy-to-clipboard icon for inline code */
+:not(pre) > .copy-to-clipboard, p .copy-to-clipboard, li .copy-to-clipboard, td .copy-to-clipboard {
+    display: none !important;
+}
+
+/* Header Typography & Sizing Fixes */
+#body #body-inner h1 {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    color: #232f3e !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 1.25rem !important;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 0.5rem;
+}
+
+#body #body-inner h2 {
+    font-size: 1.35rem !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    color: #232f3e !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+#body #body-inner h3 {
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    color: #31465f !important;
+    margin-top: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+#body #body-inner h4 {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    color: #323235 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+#sidebar ul.topics li a {
+    text-transform: none !important;
+}
+
+
+
